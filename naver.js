@@ -7,7 +7,7 @@ const getCommentList = () => commentList = [...document.querySelectorAll('#cbox_
 getCommentList();
 setInterval(() => {
     if (!commentList.length) {
-        document.querySelector('body > div.u_cbox.u_cbox_layer_wrap > div > div.u_cbox_layer_user.u_cbox_layer_user_v2 > div > div > div.u_cbox_user_cont > div.u_cbox_paginate > a').click();
+        document.querySelector('#wa_allcomments > div.u_cbox_paginate.is_more_button > a').click();
         getCommentList();
     }
     const element = commentList.shift();
